@@ -5,8 +5,6 @@ import openai
 import streamlit as st
 from moviepy.editor import VideoFileClip
 import os
-import io
-from src.utils import upload_to_s3, generate_presigned_url
 from openai import OpenAI
 
 
@@ -110,4 +108,3 @@ if st.session_state.processed:
         # Display the modified transcription
         st.subheader("Modified Transcription")
         st.write(modified_transcription)
-        
